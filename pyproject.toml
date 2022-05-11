@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "taurus-face-recog"
+version = "0.1.0"
+description = "Api for face recognition base on flask and DeepFace"
+authors = ["Jonathan Rios <jonathan.rios@cloudblue.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Flask = "^2.1.2"
+deepface = "^0.0.74"
+python-dotenv = "^0.20.0"
+gunicorn = "^20.1.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+pytest = "^7.1.2"
+pytest-mock = "^3.7.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
