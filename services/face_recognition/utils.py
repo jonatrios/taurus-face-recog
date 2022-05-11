@@ -2,6 +2,7 @@ import inspect
 import json
 import cv2
 from deepface import DeepFace
+from decouple import config
 from typing import Any, BinaryIO, Dict
 from flask import request, Response
 from werkzeug.http import HTTP_STATUS_CODES
@@ -56,7 +57,7 @@ def compare_faces(img_1: BinaryIO, img_2: BinaryIO) -> Dict[str, Any]:
     return result
 
 
-TOKEN = 'ApiKey SU-799-115-572:2dee5abc7be8086ea720e95f6448b7dca7827677'
+TOKEN = config('TAURUS_TOKEN')
 
 
 def token_required(fn):
