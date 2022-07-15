@@ -1,0 +1,26 @@
+<dataxml>
+	<s:Envelope
+		xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+		<s:Body>
+			<DeudasDeudorClientExtResponse
+				xmlns="http://tempuri.org/">
+				<DeudasDeudorClientExtResult
+					xmlns:a="http://schemas.datacontract.org/2004/07/WcfBCU"
+					xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+					<a:deudas/>
+					<a:deudor>
+						<a:documento i:nil="true"/>
+						<a:documentos i:nil="true"/>
+						<a:gruposEconomicos i:nil="true"/>
+						<a:id>0</a:id>
+						<a:nombreCompleto i:nil="true"/>
+						<a:sectorActividad i:nil="true"/>
+					</a:deudor>
+					<a:periodo i:nil="true"/>
+					<a:exito>false</a:exito>
+					<a:mensaje>El informe no contiene información de la Central de Riesgos. No surge información del BCU para ese documento de identidad o RUT para los últimos 24 meses</a:mensaje>
+				</DeudasDeudorClientExtResult>
+			</DeudasDeudorClientExtResponse>
+		</s:Body>
+	</s:Envelope>
+</dataxml>
